@@ -25,7 +25,7 @@
         Try
             Dim Consulta As String
             Consulta = ""
-            Consulta = "UPDATE parametros SET nroVisitas = " & Val(txtIdVisita.Text) + 1 & ""
+            Consulta = "UPDATE parametros SET nroVisita = " & Val(txtIdVisita.Text) + 1 & ""
             comando.Connection = conexion
             comando.CommandType = CommandType.Text
             comando.CommandText = Consulta
