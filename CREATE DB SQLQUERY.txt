@@ -1,0 +1,36 @@
+CREATE DATABASE dbLibroVisitas
+GO
+
+USE dbLibroVisitas
+GO
+
+CREATE TABLE tipoUsuario (
+idTipoUsuario int NOT NULL PRIMARY KEY,
+nombre nvarchar (255)
+)
+GO
+
+CREATE TABLE usuarios (
+idUsuario int NOT NULL PRIMARY KEY,
+nombre nvarchar (255),
+clave nvarchar (255),
+idTipoUsuario int NOT NULL FOREIGN KEY REFERENCES tipoUsuario (idTipoUsuario)
+)
+GO
+
+CREATE TABLE parametros (
+nroVisita int,
+nroRubro int,
+nroUsuario int
+)
+GO
+
+CREATE TABLE visitas (
+idVisita int NOT NULL PRIMARY KEY,
+apellido nvarchar (255),
+nombre nvarchar (255),
+rubro nvarchar (255),
+fecha date,
+hora time,
+comentarios nvarchar (255)
+)
