@@ -95,3 +95,8 @@ C:\Users\Flia. Roida-Peñalva\Desktop\LIBRO DE VISITAS\LibrodeVisitas\LibrodeVis
 C:\Users\Flia. Roida-Peñalva\Desktop\LIBRO DE VISITAS\LibrodeVisitas\LibrodeVisitas\obj\Debug\LibrodeVisitas.vbproj.GenerateResource.Cache
 C:\Users\Flia. Roida-Peñalva\Desktop\LIBRO DE VISITAS\LibrodeVisitas\LibrodeVisitas\obj\Debug\LibrodeVisitas.frmMenuPrincipal.resources
 C:\Users\Flia. Roida-Peñalva\Desktop\LIBRO DE VISITAS\LibrodeVisitas\LibrodeVisitas\obj\Debug\LibrodeVisitas.frmGrillaVisitas.resources
+C:\Users\Flia. Roida-Peñalva\Desktop\LIBRO DE VISITAS\LibrodeVisitas\LibrodeVisitas\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Flia. Roida-Peñalva\Desktop\LIBRO DE VISITAS\LibrodeVisitas\LibrodeVisitas\bin\Debug\FlashControlV71.dll
+C:\Users\Flia. Roida-Peñalva\Desktop\LIBRO DE VISITAS\LibrodeVisitas\LibrodeVisitas\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Flia. Roida-Peñalva\Desktop\LIBRO DE VISITAS\LibrodeVisitas\LibrodeVisitas\obj\Debug\LibrodeVisitas.vbproj.LibrodeVisitas.exe.config
+C:\Users\Flia. Roida-Peñalva\Desktop\LIBRO DE VISITAS\LibrodeVisitas\LibrodeVisitas\obj\Debug\LibrodeVisitas.frmMuestraReporte.resources

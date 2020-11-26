@@ -34,3 +34,33 @@ fecha date,
 hora time,
 comentarios nvarchar (255)
 )
+
+CREATE TABLE temp (
+num1 int,
+num2 int,
+num3 int,
+num4 int,
+num5 int,
+texto1 nvarchar (255),
+texto2 nvarchar (255),
+texto3 nvarchar (255),
+texto4 nvarchar (255),
+texto5 nvarchar (255),
+texto6 nvarchar (255),
+texto7 nvarchar (255),
+texto8 nvarchar (255),
+texto9 nvarchar (255)
+)
+
+ALTER TABLE temp
+ADD fecha1 date,
+	fecha2 date,
+	fecha3 date,
+	fecha4 date,
+	fecha5 date,
+	hora1 time,
+	hora2 time,
+	hora3 time,
+	hora4 time,
+	hora5 time;
+GO

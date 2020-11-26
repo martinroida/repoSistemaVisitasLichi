@@ -95,4 +95,35 @@
     Private Sub rbApellido_CheckedChanged(sender As Object, e As EventArgs) Handles rbApellido.CheckedChanged
         cargaVisitasPorApellido()
     End Sub
+
+    Private Sub btnReporte_Click(sender As Object, e As EventArgs) Handles btnReporte.Click
+        Try
+            Dim Consulta As String
+            Consulta = "TRUNCATE TABLE temp"
+            comando.Connection = conexion
+            comando.CommandType = CommandType.Text
+            comando.CommandText = Consulta
+            comando.ExecuteNonQuery()
+            MsgBox("Tabla temporal borrada", MsgBoxStyle.Information + vbOKOnly, "Borrar")
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+
+        Dim Fila As DataGridViewRow = New DataGridViewRow
+        For Each Fila In Me.dgvGrillaVisitas.Rows
+            Try
+                Dim Consulta As String
+                Consulta = "INSERT INTO temp (num1, texto1, texto2, texto3) VALUES ('" & Val(Fila.Cells(0).Value) & "', '" & Fila.Cells(1).Value & "', '" & Fila.Cells(2).Value & "', '" & Fila.Cells(3).Value & "')"
+                comando.Connection = conexion
+                comando.CommandType = CommandType.Text
+                comando.CommandText = Consulta
+                comando.ExecuteNonQuery()
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
+        Next
+        MsgBox("Datos cargados en Tabla Temporal", MsgBoxStyle.Information + vbOKOnly, "Carga")
+
+        frmMuestraReporte.Show()
+    End Sub
 End Class
